@@ -1,0 +1,22 @@
+@import '../variables';
+
+.branches__description {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  color: #4F4F4F;
+}
+
+.branches__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.constructor-map {
+  height: 500px;
+  padding: 0;
+  background: url(../../../assets/images/yandex-map.webp) no-repeat center;
+  background-size: contain;
+}

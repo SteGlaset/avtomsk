@@ -1,0 +1,81 @@
+@import 'variables';
+
+#footer {
+  background: #4F4F4F;
+  margin-top: auto;
+  padding-block: 35px;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  padding-inline: 20px;
+  flex: 2;
+  &:nth-of-type(2) {
+    align-self: start;
+    flex: 3;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+  }
+}
+
+.footer__date {
+  margin-top: 5px;
+}
+
+.politics {
+  margin-top: 0;
+}
+
+.footer__mail,
+.footer__phone {
+  margin-block: 0;
+}
+
+.footer__contact-link {
+  text-decoration: underline #FFF;
+  opacity: .8;
+  transition: opacity .2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .footer__list {
+    flex-wrap: wrap;
+  }
+  .footer__item {
+    width: 50%;
+    padding-inline: 0;
+  }
+  .footer__item:nth-of-type(3) {
+    padding-bottom: 20px;
+  }
+  .footer__item:nth-of-type(2) {
+    flex: initial;
+    order: 3;
+    width: 100%;
+    padding-block: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .footer__item {
+    flex: initial;
+    width: 100%;
+    text-align: center;
+  }
+}
+

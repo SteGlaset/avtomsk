@@ -1,0 +1,16 @@
+footer#footer
+    .container
+        ul.footer__list
+            li.footer__item Учебный Центр АвтоМСК
+                p.footer__date 2014 -
+                    |
+                    |
+                    script.
+                        document.write(new Date().getFullYear());
+            li.footer__item.text_center Вся информация представленная на сайте носит информационный характер и ни при каких условиях не является публичной офертой. Автошкола имеет право отказать в обслуживании без объяснения причины.
+            li.footer__item.text_center
+                p.politics Политика конфиденциальности
+                p.footer__phone
+                    a.footer__contact-link(href=`tel:${phone.notFormatted}`)= phone.formatted
+                p.footer__mail
+                    a.footer__contact-link(href=`mailto:${mail}`)= mail
