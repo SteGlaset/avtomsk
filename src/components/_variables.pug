@@ -1,0 +1,277 @@
+//-Текущий год
+- year = new Date().getFullYear()
+
+//-Основная информация
+- phone = { formatted: "+7 (499) 677‒61‒72", notFormatted: "+74996776172" }
+- title = `Автошкола АвтоМСК  | Онлайн и офлайн обучение в Москве на категорию B и A за 3 месяца`
+- description = `✅ Обучение вождению в Москве в автошколе  АвтоМСК ✔️ Категория А и Б ✔️ Филиалы и автодромы рядом с метро  ✔️ Офлайн и онлайн ✔️ Учим на права по маршрутам ГИБДД ✔️ Выпустили 3,7+ тыс. водителей ☎️ ${phone.formatted}`
+- mail = ""
+- workTime = "с 10:00 до 20:00 без выходных"
+- vk = "https://vk.com/mskautoklass"
+
+//-Навигационные ссылки
+-   prefixUrl = ""
+-
+    navLinks = [
+        {
+            name: "Обучение",
+            href: `${prefixUrl}#studying`
+        },
+        {
+            name: "Цены",
+            href: `${prefixUrl}#prices`
+        },
+        {
+            name: "Автопарк",
+            href: `${prefixUrl}#auto`
+        },
+        {
+            name: "Команда",
+            href: `${prefixUrl}#instructors`
+        },
+        {
+            name: "Филиалы",
+            href: `${prefixUrl}#branches`
+        },
+        {
+            name: "Отзывы",
+            href: `${prefixUrl}#reviews`
+        }
+    ]
+
+//-Филиалы
+-
+    branches = [
+        {
+            name: "м. Международная",
+            href: "mejdunarodnaya.html",
+            address: "Пресненская набережная, 10",
+            mapSrc: "https://yandex.ru/map-widget/v1/?from=mapframe&indoorLevel=1&ll=37.535257%2C55.747730&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMTA3Njg4NTkxEk7QoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0J_RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywgMTDRgTIiCg3pIxZCFZH9XkI%2C&z=17.93"
+        },
+        {
+            name: "м. Смоленская",
+            href: "smolenskaya.html",
+            address: "Смоленская площадь, 3",
+            mapSrc: "https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.581307%2C55.747485&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzk1MzI4NBJC0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0LzQvtC70LXQvdGB0LrQsNGPINC_0LvQvtGJ0LDQtNGMLCAzIgoNQlMWQhVt_V5C&z=16.09"
+        },
+        {
+            name: "м. Селигерская",
+            href: "seligerskaya.html",
+            address: "Дмитровское шоссе, 89",
+            mapSrc: "https://yandex.ru/map-widget/v1/?from=mapframe&indoorLevel=1&ll=37.547227%2C55.863827&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc4OTkzNRJB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCU0LzQuNGC0YDQvtCy0YHQutC-0LUg0YjQvtGB0YHQtSwgODkiCg2tLhZCFZF0X0I%2C&z=16.77"
+        },
+        {
+            name: "м. Багратионовская",
+            href: "bagrationovskaya.html",
+            address: "Багратионовский проезд, 7 к20в",
+            mapSrc: "https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.505467%2C55.743516&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwNzY1NRJQ0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCR0LDQs9GA0LDRgtC40L7QvdC-0LLRgdC60LjQuSDQv9GA0L7QtdC30LQsIDfQujIw0JIiCg2kBRZCFV35XkI%2C&z=16.11"
+        },
+        {
+            name: "м. Багратионовская",
+            href: "bagrationovskaya-2.html",
+            address: "улица Барклая, 6 ст5",
+            title: "",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.508230%2C55.739255&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njg2NzE5MRI70KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JHQsNGA0LrQu9Cw0Y8sIDbRgTUiCg1uCBZCFf_0XkI%2C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=16.09"
+        },
+        {
+            name: "м. ЦСКА",
+            href: "csk.html",
+            address: "Ходынский бульвар, 2",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.536832%2C55.789396&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDkyNzExOTkwEkDQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0KXQvtC00YvQvdGB0LrQuNC5INCx0YPQu9GM0LLQsNGALCAyIgoNtyUWQhVXKF9C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=16.09"
+        },
+        {
+            name: "м. Смоленская",
+            href: "smolenskaya-2.html",
+            address: "улица Новый Арбат, 21",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.585799%2C55.751898&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTY2NDE0NDYyEkDQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQndC-0LLRi9C5INCQ0YDQsdCw0YIsIDIxIgoN21cWQhXyAV9C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=16.09"
+        },
+        {
+            name: "м. Смоленская",
+            href: "smolenskaya-3.html",
+            address: "Новинский бульвар, 8",
+            mapSrc: "https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.584693%2C55.751303&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxMzMzORJA0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCd0L7QstC40L3RgdC60LjQuSDQsdGD0LvRjNCy0LDRgCwgOCIKDaZWFkIVWAFfQg%2C%2C&z=16.08"
+        },
+        {
+            name: "м. Краснопресненская",
+            href: "krasnopresnenskaya.html",
+            address: "улица Красная Пресня, 24",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.569899%2C55.762277&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcyMzM0NBJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdGPLCAyNCIKDZRHFkIVkgxfQg%2C%2C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=16.09"
+        },
+        {
+            name: "м. Студенческая",
+            href: "studencheskaya.html",
+            address: "Можайский Вал улица, 8д",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.555768%2C55.743431&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0MzQ4MzQ5OTc2EkXQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQnNC-0LbQsNC50YHQutC40Lkg0JLQsNC7LCA40JQiCg0bORZCFUb5XkI%2C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=16.09"
+        },
+        {
+            name: "м. Лубянка",
+            href: "lubyanka.html",
+            address: "улица Никольская, 10",
+            mapSrc: "https://yandex.ru/map-widget/v1/?ll=37.624306%2C55.758097&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxODgxMBI_0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCd0LjQutC-0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDEwIgoNiH8WQhUmCF9C&utm_medium=mapframe&utm_source=maps%22%20style%3D%22color%3A&z=15.04"
+        }
+
+    ].sort((a, b) => a.name.localeCompare(b.name))
+
+//-Инструкторы
+-
+    instructors = [
+        {
+            imageSrc: 'assets/images/instructors/instructor-1.webp',
+            description: '“Уверен на 100% в курсантах, которых готовлю. Это примерные дисциплинированные водители.”'
+        },
+        {
+            imageSrc: 'assets/images/instructors/instructor-2.webp',
+            description: '“Научиться водить еще проще и быстрее, чем научиться писать. И я вам это докажу!”'
+        },
+        {
+            imageSrc: 'assets/images/instructors/instructor-3.webp',
+            description: '“Вам не о чем беспокоиться, когда рядом — профессионал с большим опытом и чувством такта.”'
+        },
+        {
+            imageSrc: 'assets/images/instructors/instructor-4.webp',
+            description: '“Уроки вождения для будущих водителей в автошколе АвтоМСК проходят без страха и стресса. Потому что мы любим свое дело.”'
+        }
+    ]
+-
+    classes =
+            [
+                'assets/images/classes/class-1.webp',
+                'assets/images/classes/class-2.webp',
+                'assets/images/classes/class-3.webp',
+                'assets/images/classes/class-4.webp',
+                'assets/images/classes/class-5.webp',
+                'assets/images/classes/class-6.webp'
+            ]
+
+-
+    reviews =
+            [
+                {
+                    title: 'Кирилл, 23 года',
+                    description: '“Узнавал, сколько стоит обучение в автошколе, посмотрел на карту филиалов, нашел ближайший к дому. Все совпало, чтобы записаться сюда. Отучился, не пожалел. Хорошее обучение, доброжелательные преподаватели. Все отлично.”',
+                    imageSrc: 'assets/images/reviews/review-1.webp'
+                },
+                {
+                    title: 'Анастасия, 30 лет',
+                    description: '“В эту автошколу меня записал супруг по рекомендации своих коллег. Я осталась всем довольна. Машины хорошие, классы тоже. Сейчас уже и онлайн-обучение есть. Отучилась быстро, сдала с 1 раза. 2 года с правами.”',
+                    imageSrc: 'assets/images/reviews/review-2.webp'
+                },
+                {
+                    title: 'Илья, 36 лет',
+                    description: '“Залез в интернет посмотреть, сколько вообще стоит сдать на права. В этой автошколе была выгодная акция. Не планировал приступать к обучению так быстро, но предложение было выгодным. Обучение оплачивал частями, что очень удобно. Теперь у меня новая работа благодаря АвтоМСК — очень вовремя сдал на права и оказался в нужном месте в нужное время.”',
+                    imageSrc: 'assets/images/reviews/review-3.webp'
+                },
+                {
+                    title: 'Виктория, 19 лет',
+                    description: '“Прошла обучение на категорию А. Автошколу выбрали родители. Мне все понравилось, очень добрые преподаватели и инструкторы. График занятий удобный. Как отучилась — даже не заметила))”',
+                    imageSrc: 'assets/images/reviews/review-4.webp'
+                },
+            ]
+-
+    rewards = [
+        {
+            imageSrc: 'assets/images/rewards/reward-1.webp',
+            description: 'Грамота за сотрудничество в организации соревнований юных инспекторов движения "Безопасное колесо-2020"'
+        },
+        {
+            imageSrc: 'assets/images/rewards/reward-2.webp',
+            description: 'КУбок- 1-ое место в рейтинге: Лучшие автошколы в Москве в номинации "Лучшие условия по времени и месту обучения"'
+        },
+        {
+            imageSrc: 'assets/images/rewards/reward-3.webp',
+            description: 'Медаль- 1-ое место в рейтинге автошкол Москвы, осуществляющих образовательную деятельность за 2019 год'
+        }
+    ]
+
+-
+    faq = [
+        {
+            question: 'Что делать, если я пропустил занятие?',
+            answer: '— Вы можете нагнать пропущенный материал с другими группами.'
+        },
+        {
+            question: 'Могу ли я перезаписаться в другую группу?',
+            answer: '— Да, при условии, что группа, в которую вы хотите перевестись, не содержит максимальное количество учеников.'
+        },
+        {
+            question: 'Что делать, если я потерял свидетельство об обучении в автошколе?',
+            answer: '— Это важный документ, без которого вы не сможете сдать экзамен в ГИБДД. В случае утери свидетельства следует обратиться в автошколу за выдачей дубликата.'
+        },
+        {
+            question: 'Предоставляете ли скидки?',
+            answer: '— Да, мы регулярно проводим акции, скидки для желающих обучаться на категорию А или Б — стоимость курса в акционные периоды ниже.'
+        }
+    ]
+
+-
+    prices =
+            [
+                {
+                    title: "МКПП Онлайн",
+                    "20": "27 000 ₽",
+                    "40": "37 000 ₽",
+                    "56": "47 000 ₽",
+                    downPayment: "17 000 ₽**",
+                },
+                {
+                    title: "МКПП Очно",
+                    "20": "31 000 ₽",
+                    "40": "42 000 ₽",
+                    "56": "52 000 ₽",
+                    downPayment: "17 000 ₽**",
+                },
+                {
+                    title: "АКПП Онлайн",
+                    "20": "28 000 ₽",
+                    "40": "39 000 ₽",
+                    "56": "49 000 ₽",
+                    downPayment: "17 000 ₽**",
+                },
+                {
+                    title: "АКПП Очно",
+                    "20": "33 000 ₽",
+                    "40": "44 000 ₽",
+                    "56": "54 000 ₽",
+                    downPayment: "17 000 ₽**",
+                },
+                {
+                    title: "А",
+                    price: "20 000 ₽",
+                    "20": "",
+                    "40": "",
+                    "56": "",
+                    downPayment: "15 000 ₽",
+                },
+                {
+                    title: "А+В",
+                    price: "42 000 ₽",
+                    "20": "",
+                    "40": "",
+                    "56": "",
+                    downPayment: "15 000 ₽",
+                },
+            ]
+
+-
+    overrun = [
+        {
+            title: 'Минимальный курс',
+            features: ['5 занятий с инструктором', 'Онлайн поддержка'],
+            price: '11 000 ₽'
+        },
+        {
+            title: 'Оптимальный курс',
+            features: ['10 занятий с инструктором', 'Доступ к онлайн платформе ПДД', 'Онлайн поддержка'],
+            price: '20 000 ₽'
+        },
+        {
+            title: 'Расширенный курс',
+            features: [
+                '10 занятий с инструктором',
+                'Доступ к онлайн платформе ПДД',
+                'Онлайн поддержка',
+                'Сессия с психологом (как побороть страх вождения и приобрести уверенность за рулем)'
+            ],
+            price: '25 000 ₽'
+        }
+    ]

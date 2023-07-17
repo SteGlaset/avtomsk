@@ -1,0 +1,116 @@
+@import '../variables';
+
+#instructors {
+  background: url("../../../assets/images/background/instructors-car-black-bg.webp") no-repeat 100% calc(25% + 80px),
+  url("../../../assets/images/background/instructors-car-bg.webp") no-repeat 0 calc(75% + 40px);
+  background-size: 350px auto;
+}
+
+.instructors__list {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  margin-block: 120px 100px;
+}
+
+.instructors__item {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-inline: auto;
+  &:nth-of-type(odd) .instructors__description {
+    margin-left: 10%;
+  }
+  &:nth-of-type(even) .instructors__description {
+    margin-right: 10%;
+  }
+  &:first-of-type {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 276px;
+      height: 210px;
+      position: absolute;
+      top: -60px;
+      left: 0;
+      background: url("../../../assets/images/speedometer.webp") no-repeat;
+      background-size: contain;
+    }
+  }
+  &:last-of-type {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 276px;
+      height: 210px;
+      position: absolute;
+      top: -60px;
+      right: 0;
+      background: url("../../../assets/images/speedometer.webp") no-repeat;
+      background-size: contain;
+      transform: rotateX(180deg) scale(-1);
+    }
+  }
+}
+
+.instructors__image {
+  width: 50%;
+}
+
+.instructors__description {
+  display: block;
+  width: 40%;
+  height: 420px;
+  background: #5CDD4D;
+  box-shadow: 6px 8px 14px 3px rgba(0, 0, 0, 0.25);
+  font-family: 'Calibri', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 200%;
+  color: #FFF;
+  padding: 35px 45px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: $lg) {
+  .instructors__item {
+    width: 80%;
+    &:nth-of-type(odd) {
+      flex-direction: column-reverse;
+    }
+    &:nth-of-type(even) {
+      flex-direction: column;
+    }
+    &:first-of-type {
+      &::before {
+        content: none;
+      }
+    }
+    &:last-of-type {
+      &::after {
+        content: none;
+      }
+    }
+  }
+  .instructors__description {
+    width: 90%;
+    height: auto;
+    margin: 0 !important;
+  }
+  .instructors__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .instructors__list {
+    margin-top: 0;
+  }
+  .instructors__item {
+    width: 100%;
+  }
+}

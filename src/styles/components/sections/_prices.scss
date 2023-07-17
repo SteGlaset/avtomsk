@@ -1,0 +1,81 @@
+.prices__h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.prices__h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.prices__title {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 214.2%;
+  letter-spacing: 0.1em;
+  color: #4F4F4F;
+}
+
+.prices__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 94rem;
+  gap: 2rem;
+  margin-top: 60px;
+  margin-inline: auto;
+}
+
+.price__list {
+  margin-bottom: 2rem;
+}
+
+.prices__item {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  font-size: 1.6rem;
+  padding: 3.2rem 1.8rem;
+  margin-bottom: 2.4rem;
+  border: 10px solid #FFDE48;
+  border-radius: 30px;
+  font-weight: 300;
+  color: #4F4F4F;
+}
+
+.prices__description {
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: center;
+  margin-block: 1rem;
+  font-weight: 300;
+}
+
+.prices__btn {
+  margin-top: 60px;
+}
+
+.price__item {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-block: .5rem;
+  }
+}
+
+.overrun__price-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 1.8rem;
+}
+
+.overrun__h3 {
+  margin-bottom: 2.8rem;
+}
+
+.overrun__total {
+  font-weight: bold;
+}

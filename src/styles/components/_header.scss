@@ -1,0 +1,142 @@
+@import 'variables';
+
+#header {
+  height: $header-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header__container {
+  height: 100%;
+}
+
+.header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  height: 81px;
+  margin-right: 90px;
+}
+
+.header__links-list {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FFF;
+  border-bottom: 2px solid transparent;
+  transition: .2s;
+  &.active {
+    border-bottom: 2px solid #5CDD4D;
+  }
+  &:hover {
+    color: #5CDD4D;
+    text-shadow: 0 0 1px #76a770;
+  }
+}
+
+.header__mobile {
+  display: none;
+}
+
+#burger-input {
+  display: none;
+}
+
+.header_background {
+  background: #4F4F4F;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.header_scrolling {
+  transition: box-shadow .2s;
+}
+
+
+@media screen and (max-width: $lg) {
+  .header__logo {
+    margin-right: 50px;
+  }
+  .autodrom__item_1 {
+    font-size: 1.8rem;
+  }
+
+  .header__links-list {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: $md) {
+  #header {
+    height: $header-height-mobile;
+    display: block;
+    background: #4F4F4F;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 65px;
+    margin-right: 20px;
+  }
+
+  .header__links-list {
+    display: none;
+  }
+
+  .header__social-list {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .header__mobile {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .header__mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: $header-height-mobile;
+    background: #4F4F4F;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding-block: 0;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    transition: all .3s ease;
+    .header__links-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  #burger-input {
+    &:checked ~ .header__mobile-nav {
+      height: 200px;
+      padding-block: 20px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'sections/about';
+@import 'sections/advantages';
+@import 'sections/autodrom';
+@import 'sections/automsk';
+@import 'sections/autopark';
+@import 'sections/branches';
+@import 'sections/classes';
+@import 'sections/enroll';
+@import 'sections/faq';
+@import 'sections/instructors';
+@import 'sections/prices';
+@import 'sections/reviews';
+@import 'sections/rewards';
+@import 'sections/studying';
+
+.background_grey-variant {
+  position: relative;
+  background: #4F4F4F url('../../assets/images/background/u-bg-grey.webp') center;
+  background-size: 700px;
+  margin-block: calc(100vw * 0.22 + 100px);
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100vw * 0.22);
+    position: absolute;
+    top: - calc(100vw * 0.22);
+    left: 0;
+    background: url('../../assets/images/background/race-bg-top.webp') no-repeat;
+    background-size: cover;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100vw * 0.22);
+    position: absolute;
+    bottom: - calc(100vw * 0.22);
+    left: 0;
+    background: url('../../assets/images/background/race-bg-bottom.webp') no-repeat;
+    background-size: cover;
+  }
+  &.green {
+    background-image: url('../../assets/images/background/u-bg-green.webp');
+  }
+}
+
+@media screen and (max-width: $md) {
+  .background_grey-variant {
+    margin-block: calc(100vw * 0.42 + 100px);
+    &::before {
+      height: calc(100vw * 0.42);
+      top: - calc(100vw * 0.42);
+      background-size: 200%;
+    }
+    &::after {
+      height: calc(100vw * 0.42);
+      bottom: - calc(100vw * 0.42);
+      background-size: 200%;
+    }
+  }
+}
+
