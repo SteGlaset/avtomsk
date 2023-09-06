@@ -1,9 +1,27 @@
 extends components/_base
 
 block head_start
-
     meta(name='yandex-verification' content='ab41e8ff7bf3b562')
-
+    script.
+        (function (a, m, o, c, r, m) {
+            a[m] = {
+                id: "246883",
+                hash: "4ce0200c746a045c0d8aca6281162bb222d00b518f3b1cd7e23ea78a33cedfe2",
+                locale: "ru",
+                inline: false,
+                setMeta: function (p) {
+                    this.params = (this.params || []).concat([p])
+                }
+            };
+            a[o] = a[o] || function () {
+                (a[o].q = a[o].q || []).push(arguments)
+            };
+            var d = a.document, s = d.createElement('script');
+            s.async = true;
+            s.id = m + '_script';
+            s.src = 'https://gso.amocrm.ru/js/button.js?1690370776';
+            d.head && d.head.appendChild(s)
+        }(window, 0, 'amoSocialButton', 0, 0, 'amo_social_button'));
 
 block variables
     - navLinks[0].active = true
@@ -34,15 +52,14 @@ block main
     main#main
         section#automsk
             .container.automsk__container
-                h1.automsk__title.text_uppercase
+                p.automsk__title.text_uppercase
                     span.automsk__paragraph За правами
                     br
                     span.automsk__paragraph категории A, B — к нам!
-                .automsk__description-box.text_uppercase
-                    p /Обучение вождению в Москве в автошколе АвтоМСК️
-                    p /Категория А и Б️
-                    p /Филиалы и автодромы рядом с метро️ Офлайн и онлайн️
-                    p /Учим на права по маршрутам ГИБДД️ Выпустили 3,7+ тыс. водителей
+                h1.automsk__description-box.text_uppercase
+                    span.automsk__description-text / Автошкола в Москве
+                    span.automsk__description-text / Обучение вождению А и B, C, D, E
+                    span.automsk__description-text / С гарантией получения прав
                 .automsk__interactive-box
                     +enrollModal('btn btn_square', 'Записаться')
                     a.phone.automsk__phone(href=`tel:${phone.notFormatted}`)= phone.formatted
@@ -64,7 +81,7 @@ block main
                         .fact__box.fact__box_rounded
                             p.fact__title 5
                             p.fact__inner-description лет
-                        .fact__bottom-description.text_center учим на права категории B и A
+                        .fact__bottom-description.text_center учим на права категории А, B, C, D, E
                     li.fact__item.fact__item_3
                         .fact__box.fact__box_borderless
                             p.fact__title 17

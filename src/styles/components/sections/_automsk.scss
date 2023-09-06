@@ -44,27 +44,26 @@
 }
 
 .automsk__description-box {
-  font-weight: 300;
-  font-size: 1.5rem;
   margin-bottom: 60px;
-  p {
+  .automsk__description-text {
+    display: block;
     opacity: 0;
     transform: translateX(-200px);
-  }
-  p:nth-of-type(1) {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
     animation: raceLeft 1s forwards;
+  }
+  .automsk__description-text:nth-of-type(1) {
     animation-delay: .5s;
   }
-  p:nth-of-type(2) {
-    animation: raceLeft 1s forwards;
+  .automsk__description-text:nth-of-type(2) {
     animation-delay: .7s;
   }
-  p:nth-of-type(3) {
-    animation: raceLeft 1s forwards;
+  .automsk__description-text:nth-of-type(3) {
     animation-delay: .9s;
   }
-  p:nth-of-type(4) {
-    animation: raceLeft 1s forwards;
+  .automsk__description-text:nth-of-type(4) {
     animation-delay: 1.1s;
   }
 }

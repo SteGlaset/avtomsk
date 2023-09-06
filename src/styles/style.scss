@@ -275,7 +275,7 @@ section {
         content: '';
         display: block;
         position: relative;
-        width: 100%;
+        width: 50%;
         height: 4rem;
         background: repeating-linear-gradient(135deg, transparent 0%, transparent 40px, #4F4F4F 40px, #4F4F4F 80px, transparent 80px);
         transform: rotate(180deg);
@@ -287,7 +287,7 @@ section {
     &::after {
       content: '';
       display: block;
-      width: 100%;
+      width: 50%;
       height: 4rem;
       background: repeating-linear-gradient(135deg, transparent 0%, transparent 40px, #4F4F4F 40px, #4F4F4F 80px, transparent 80px);
     }
